@@ -2,6 +2,7 @@
 
 import copy
 from collections import defaultdict
+import time
 
 line = open("data/day9.txt").read()
 map = defaultdict(lambda: (0, 0))
@@ -12,6 +13,7 @@ for i in range(0, len(line), 2):
     c += 1
 
 # part 1.
+t_start = time.time()
 s = 0
 map1 = copy.deepcopy(map)
 for k, v in {k: v for k, v in sorted(map1.items(), reverse=True)}.items():
@@ -55,9 +57,11 @@ chk_sum = 0
 for e, i in enumerate(files):
     chk_sum += e * i
 
-print(f"** part 1 = {chk_sum} **")
+print(f"** part 1 = {chk_sum} ** [time taken: {time.time() - t_start}s]")
+
 
 # part 2.
+t_start = time.time()
 map2 = copy.deepcopy(map)
 for k, v in {k: v for k, v in sorted(map2.items(), reverse=True)}.items():
     s = 0  # reset pointer for each value.
@@ -94,4 +98,4 @@ for e, i in enumerate(files):
     if i != ".":
         chk_sum += e * i
 
-print(f"** part 2 = {chk_sum} **")
+print(f"** part 2 = {chk_sum} ** [time taken: {time.time() - t_start}s]")
