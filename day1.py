@@ -1,7 +1,8 @@
 """AOC day 1."""
 
-import numpy as np
 from collections import Counter
+
+import numpy as np
 
 with open("data/day1.txt") as f:
     l1, l2 = [], []
