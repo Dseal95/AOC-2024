@@ -59,7 +59,6 @@ for e, i in enumerate(files):
 
 print(f"** part 1 = {chk_sum} ** [time taken: {time.time() - t_start}s]")
 
-
 # part 2.
 t_start = time.time()
 map2 = copy.deepcopy(map)
