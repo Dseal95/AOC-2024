@@ -30,7 +30,7 @@ stones = "5688 62084 2 3248809 179 79 0 172169"
 # arr = expand_arr(blink(arr))
 # print(f"** part 1 = {len(arr.shape[0])} ** [time taken: {time.time() - t_start}s]")
 
-
+# amazing explanation of @cache decotrator: https://www.youtube.com/watch?v=pVfsmQSlVOQ&ab_channel=HyperNeutrino
 @cache
 def count(stone, steps):
     if steps == 0:
