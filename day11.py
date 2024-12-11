@@ -30,9 +30,10 @@ stones = "5688 62084 2 3248809 179 79 0 172169"
 # arr = expand_arr(blink(arr))
 # print(f"** part 1 = {len(arr.shape[0])} ** [time taken: {time.time() - t_start}s]")
 
+
 # amazing explanation of @cache decorator: https://www.youtube.com/watch?v=pVfsmQSlVOQ&ab_channel=HyperNeutrino.
 # able to use @cache over @lru_cache as we don't need to track usage order, just result.
-@cache 
+@cache
 def count(stone, steps):
     if steps == 0:
         return 1
