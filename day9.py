@@ -1,8 +1,8 @@
 """AOC day 9."""
 
 import copy
-from collections import defaultdict
 import time
+from collections import defaultdict
 
 line = open("data/day9.txt").read()
 map = defaultdict(lambda: (0, 0))
